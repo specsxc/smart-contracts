@@ -11,6 +11,7 @@ contract LimitedWithdraw {
     }
 
     function withdraw(uint256 amount) public {
+        require(balances[msg.sender] >= amount);
         balances[msg.sender] -= amount;
     }
 }

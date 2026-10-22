@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 // Zadanie 12 – NameRegistry: Utwórz mapowanie mapping(address => string) public names oraz funkcje setMyName(string memory name) i getMyName().
 
-contract UserBalances {
+contract NameRegistry {
     mapping(address => string) public names;
 
     function setMyName(string memory name) public {
